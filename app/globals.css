@@ -15,9 +15,17 @@
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+body.light {
+  background-color: #ffffff;
+  color: #171717;
+}
+
+body.dark {
+  color: #ededed;
+  background: #0a0a0a;
 }
 
 @layer utilities {
