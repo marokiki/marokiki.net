@@ -54,7 +54,7 @@ export default function Home() {
         <h2 style={styles.sectionTitle}>所属</h2>
         <ul style={styles.infoList}>
           <li style={styles.infoItem}>
-            2021/4- 京都大学工学部情報学研究科計算機科学コース
+            2021/4-: 京都大学工学部情報学研究科計算機科学コース
           </li>
         </ul>
       </section>
@@ -80,8 +80,8 @@ export default function Home() {
         <ul style={styles.infoList}>
           <li style={styles.infoItem}>2021/4-: 京大マイコンクラブ</li>
           <ul style={styles.infoList}>
-            <li style={styles.infoItem}>45代 副会長</li>
-            <li style={styles.infoItem}>46代 副代表</li>
+            <li style={styles.infoSubItem}>45代 副会長</li>
+            <li style={styles.infoSubItem}>46代 副代表</li>
           </ul>
           <li style={styles.infoItem}>
             2024/7-: Home NOC Operators&apos; Group
@@ -101,8 +101,8 @@ export default function Home() {
             2024/10: NaniwaNOG 2 Meeting in Himeji
           </li>
           <ul style={styles.infoList}>
-            <li style={styles.infoItem}>発表 「若手セッション2024」</li>
-            <li style={styles.infoItem}>NOC Member</li>
+            <li style={styles.infoSubItem}>発表 「若手セッション2024」</li>
+            <li style={styles.infoSubItem}>NOC Member</li>
           </ul>
         </ul>
       </section>
@@ -111,18 +111,18 @@ export default function Home() {
         <h2 style={styles.sectionTitle}>インターン</h2>
         <ul style={styles.infoList}>
           <li style={styles.infoItem}>
-            2023/2/20-3/18 NTT研究所 インターン
+            2023/2/20-3/18: NTT研究所 インターン
             「セキュリティ可視化情報を用いた脆弱性の影響分析手法の検討」
           </li>
           <li style={styles.infoItem}>
-            2023/8/1-8/18 合同会社DMM.com インターン ネットワークインフラコース
+            2023/8/1-8/18: 合同会社DMM.com インターン ネットワークインフラコース
           </li>
           <li style={styles.infoItem}>
-            2023/8/21-9/1 Yahoo!Japan インターン
+            2023/8/21-9/1: Yahoo!Japan インターン
             「モダンなインフラ基盤を用いた、コンテンツ配信システムの構築を体験」
           </li>
           <li style={styles.infoItem}>
-            2024/9/9-9/13 Flatt Security インターン セキュリティ診断
+            2024/9/9-9/13: Flatt Security インターン セキュリティ診断
           </li>
         </ul>
       </section>
@@ -131,13 +131,14 @@ export default function Home() {
         <h2 style={styles.sectionTitle}>アルバイト</h2>
         <ul style={styles.infoList}>
           <li style={styles.infoItem}>
-            2021/10- 株式会社演算工房 Windows Form, WPF 開発
+            2021/10-: 株式会社演算工房 Windows Form, WPF 開発
           </li>
           <li style={styles.infoItem}>
-            2022/10- 株式会社エンターグラム C++ を用いたゲーム開発
+            2022/10-: 株式会社エンターグラム C++ を用いたゲーム開発
           </li>
           <li style={styles.infoItem}>
-            2024/7- もみじテック株式会社 Docker, Kubernetes を用いたインフラ構築
+            2024/7-: もみじテック株式会社 Docker, Kubernetes
+            を用いたインフラ構築
           </li>
         </ul>
       </section>

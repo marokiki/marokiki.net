@@ -34,13 +34,20 @@ const styles = {
   },
   infoList: {
     listStyleType: "disc",
-    paddingLeft: "20px", 
+    paddingLeft: "10px", 
     marginBottom: "20px",
   },
   infoItem: {
+    listStyleType: "none",
+    fontSize: "1.2rem",
+    marginBottom: "10px",
+    color: "#708090",
+  },
+  infoSubItem: {
     fontSize: "1rem",
     marginBottom: "10px",
     color: "#708090",
+    marginLeft: "20px",
   },
   link: {
     color: "#3498db",
