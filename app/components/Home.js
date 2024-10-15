@@ -86,6 +86,11 @@ export default function Home() {
           <li style={styles.infoItem}>
             2024/7-: Home NOC Operators&apos; Group
           </li>
+          <ul style={styles.infoList}>
+            <li style={styles.infoSubItem}>正会員</li>
+            <li style={styles.infoSubItem}>データセンターや自宅NOCでのネットワーク機器・サーバーのメンテナンス</li>
+            <li style={styles.infoSubItem}>カンファレンス等への参加を通じてコミュニティへの貢献</li>
+          </ul>
           <li style={styles.infoItem}>2024/5: RubyKaigi 2024 NOC Member</li>
           <li style={styles.infoItem}>
             2024/6: Interop24 Tokyo Shownet Contributer
@@ -94,9 +99,15 @@ export default function Home() {
           <li style={styles.infoItem}>
             2024/7: JANOG54 「アマチュアAS 運用を議論するBoF」
           </li>
+          <ul style={styles.infoList}>
+            <li style={styles.infoSubItem}>発表 「現在のIXへの接続状況」</li>
+          </ul>
           <li style={styles.infoItem}>
             2024/8: Asia Peering Forum in チェンマイ{" "}
           </li>
+          <ul style={styles.infoList}>
+            <li style={styles.infoSubItem}>Peering Personal で発表</li>
+          </ul>
           <li style={styles.infoItem}>
             2024/10: NaniwaNOG 2 Meeting in Himeji
           </li>
@@ -110,36 +121,63 @@ export default function Home() {
       <section style={styles.section}>
         <h2 style={styles.sectionTitle}>インターン</h2>
         <ul style={styles.infoList}>
+          <li style={styles.infoItem}>2023/2/20-3/18: NTT研究所 インターン</li>
+          <ul style={styles.infoList}>
+            <li style={styles.infoSubItem}>
+              「セキュリティ可視化情報を用いた脆弱性の影響分析手法の検討」
+            </li>
+            <li style={styles.infoSubItem}>Layer2プロトコルの実装</li>
+            <li style={styles.infoSubItem}>脆弱性情報の可視化</li>
+          </ul>
           <li style={styles.infoItem}>
-            2023/2/20-3/18: NTT研究所 インターン
-            「セキュリティ可視化情報を用いた脆弱性の影響分析手法の検討」
+            2023/8/1-8/18: 合同会社DMM.com インターン
           </li>
+          <ul style={styles.infoList}>
+            <li style={styles.infoSubItem}>ネットワークインフラコース</li>
+            <li style={styles.infoSubItem}>ルーターエンジンの検証</li>
+            <li style={styles.infoSubItem}>ansible を用いた自動化</li>
+          </ul>
+          <li style={styles.infoItem}>2023/8/21-9/1: Yahoo!Japan インターン</li>
+          <ul style={styles.infoList}>
+            <li style={styles.infoSubItem}>
+              「モダンなインフラ基盤を用いた、コンテンツ配信システムの構築を体験」
+            </li>
+            <li style={styles.infoSubItem}>
+              インフラ構成の設計・作成・レビュー
+            </li>
+            <li style={styles.infoSubItem}>
+              ネットワーク、サーバー、ストレージ、ロードバランサー、CDNの構築作業
+            </li>
+          </ul>
           <li style={styles.infoItem}>
-            2023/8/1-8/18: 合同会社DMM.com インターン ネットワークインフラコース
+            2024/9/9-9/13: Flatt Security インターン
           </li>
-          <li style={styles.infoItem}>
-            2023/8/21-9/1: Yahoo!Japan インターン
-            「モダンなインフラ基盤を用いた、コンテンツ配信システムの構築を体験」
-          </li>
-          <li style={styles.infoItem}>
-            2024/9/9-9/13: Flatt Security インターン セキュリティ診断
-          </li>
+          <ul style={styles.infoList}>
+            <li style={styles.infoSubItem}>
+              Webセキュリティに関するハンズオントレーニング
+            </li>
+            <li style={styles.infoSubItem}>セキュリティ診断業務の体験</li>
+          </ul>
         </ul>
       </section>
 
       <section style={styles.section}>
         <h2 style={styles.sectionTitle}>アルバイト</h2>
         <ul style={styles.infoList}>
-          <li style={styles.infoItem}>
-            2021/10-: 株式会社演算工房 Windows Form, WPF 開発
-          </li>
-          <li style={styles.infoItem}>
-            2022/10-: 株式会社エンターグラム C++ を用いたゲーム開発
-          </li>
-          <li style={styles.infoItem}>
-            2024/7-: もみじテック株式会社 Docker, Kubernetes
-            を用いたインフラ構築
-          </li>
+          <li style={styles.infoItem}>2021/10-: 株式会社演算工房</li>
+          <ul style={styles.infoList}>
+            <li style={styles.infoSubItem}>Windows Form, WPF 開発</li>
+          </ul>
+          <li style={styles.infoItem}>2022/10-: 株式会社エンターグラム</li>
+          <ul style={styles.infoList}>
+            <li style={styles.infoSubItem}>C++ を用いたゲーム開発</li>
+          </ul>
+          <li style={styles.infoItem}>2024/7-: もみじテック株式会社</li>
+          <ul style={styles.infoList}>
+            <li style={styles.infoSubItem}>
+              Docker, Kubernetes 等を用いたインフラ構築・運用
+            </li>
+          </ul>
         </ul>
       </section>
     </div>
