@@ -216,7 +216,7 @@ export default function Home() {
           </ul>
           <li style={dynamicStyles.infoItem}>2024/11/28: BBIX BGP Meeting 2024 Winter</li>
           <li style={dynamicStyles.infoItem}>
-            2024/12: 大学ICT推進協議会(AXIES)2024 NOC Member
+            2024/12: 大学ICT推進協議会(AXIES) 2024 NOC Member
           </li>
           <ul style={styles.infoList}>
             <li style={dynamicStyles.infoSubItem}>BackBone / L2,L3 Team リーダー{" "}
