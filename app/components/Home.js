@@ -317,7 +317,7 @@ export default function Home() {
           <ul style={styles.infoList}>
             <li style={dynamicStyles.infoSubItem}>Windows Form, WPF 開発</li>
           </ul>
-          <li style={dynamicStyles.infoItem}>2022/10-: 株式会社エンターグラム</li>
+          <li style={dynamicStyles.infoItem}>2022/10-2024/11: 株式会社エンターグラム</li>
           <ul style={styles.infoList}>
             <li style={dynamicStyles.infoSubItem}>C++ を用いたゲーム開発</li>
           </ul>
