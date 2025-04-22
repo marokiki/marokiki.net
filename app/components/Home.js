@@ -201,6 +201,7 @@ export default function Home() {
           </li>
           <ul style={styles.infoList}>
             <li style={dynamicStyles.infoSubItem}>Peering Personal 発表</li>
+            <li style={dynamicStyles.infoSubItem}>複数のASチームとHomeNOCとの接続についてミーティング</li>
           </ul>
           <li style={dynamicStyles.infoItem}>
             2024/10: NaniwaNOG 2 Meeting in Himeji
@@ -232,6 +233,7 @@ export default function Home() {
           </li>
           <ul style={styles.infoList}>
             <li style={dynamicStyles.infoSubItem}>Peering Personal 発表</li>
+            <li style={dynamicStyles.infoSubItem}>複数のASチームとHomeNOCとの接続についてミーティング</li>
             <li style={dynamicStyles.infoSubItem}>Lightning Talk 発表「Community Activities as a non-profit Learning/Research ASN」{" "}
               <a href="https://www.youtube.com/live/SnGq4_LLl4Q?si=wjtJ1LM4bpPt-VBw&t=2760" target="_blank" style={styles.link}>
                 <span style={styles.linkHover}>発表録画</span>
@@ -244,6 +246,16 @@ export default function Home() {
               <span style={styles.linkHover}>大会ページ</span>
             </a>
           </li>
+          <li style={dynamicStyles.infoItem}>
+            2025/4/18: TWNOG 6 in Taipei{" "}
+            <a href="https://2025.twnog.net" target="_blank" style={styles.link}>
+              <span style={styles.linkHover}>HP</span>
+            </a>
+          </li>
+          <ul style={styles.infoList}>
+            <li style={dynamicStyles.infoSubItem}>Peering Personal 発表</li>
+            <li style={dynamicStyles.infoSubItem}>現地のHomeNOCユーザと交流</li>
+          </ul>
         </ul>
       </section>
 
