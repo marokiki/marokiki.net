@@ -44,7 +44,7 @@ const styles = {
     color: "#708090",
   },
   infoSubItem: {
-    fontSize: "1rem",
+    fontSize: ".9rem",
     marginBottom: "10px",
     color: "#708090",
     marginLeft: "20px",

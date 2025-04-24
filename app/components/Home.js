@@ -14,11 +14,11 @@ export default function Home() {
   const dynamicStyles = {
     infoItem: {
       ...styles.infoItem,
-      color: currentTheme === "dark" ? "#f0f8ff" : "#696969",
+      color: currentTheme === "dark" ? "#f0f8ff" : "#222222",
     },
     infoSubItem: {
       ...styles.infoSubItem,
-      color: currentTheme === "dark" ? "#e6e6fa" : "#708090",
+      color: currentTheme === "dark" ? "#ffffe5" : "#708090",
     },
   };
 
