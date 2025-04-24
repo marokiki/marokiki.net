@@ -198,6 +198,9 @@ export default function Home() {
           </ul>
           <li style={dynamicStyles.infoItem}>
             2024/8: Asia Peering Forum in チェンマイ{" "}
+            <a href="https://www.homenoc.ad.jp/blog/report/2024/08/22/AFP2024.html" target="_blank" style={styles.link}>
+              <span style={styles.linkHover}>参加報告</span>
+            </a>
           </li>
           <ul style={styles.infoList}>
             <li style={dynamicStyles.infoSubItem}>Peering Personal 発表</li>
@@ -212,9 +215,17 @@ export default function Home() {
                 <span style={styles.linkHover}>発表録画</span>
               </a>
             </li>
-            <li style={dynamicStyles.infoSubItem}>NOC Member</li>
+            <li style={dynamicStyles.infoSubItem}>NOC Member{" "}
+              <a href="https://knowledge.sakura.ad.jp/39964/" target="_blank" style={styles.link}>
+                <span style={styles.linkHover}>活動内容</span>
+              </a>
+            </li>
           </ul>
-          <li style={dynamicStyles.infoItem}>2024/11/28: BBIX BGP Meeting 2024 Winter</li>
+          <li style={dynamicStyles.infoItem}>2024/11/28: BBIX BGP Meeting 2024 Winter{" "}
+            <a href="https://www.homenoc.ad.jp/blog/report/2024/12/15/bgp-meeting.html" target="_blank" style={styles.link}>
+              <span style={styles.linkHover}>参加報告</span>
+            </a>
+          </li>
           <li style={dynamicStyles.infoItem}>
             2024/12: 大学ICT推進協議会(AXIES) 2024 NOC Member
           </li>
