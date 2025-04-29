@@ -167,7 +167,13 @@ export default function Home() {
             <li style={dynamicStyles.infoSubItem}>カンファレンス等への参加を通じてコミュニティへの貢献</li>
           </ul>
           <li style={dynamicStyles.infoItem}>
-            2023/3: ICTSC2024 チーム「KMC」5位{" "}
+            2023/10/8-12: Internet Governance Forum(IGF) 2023 Kyoto{" "}
+            <ul style={styles.infoList}>
+              <li style={dynamicStyles.infoSubItem}>一般参加</li>
+            </ul>
+          </li>
+          <li style={dynamicStyles.infoItem}>
+            2024/3: ICTSC2023 チーム「KMC」5位{" "}
             <a href="https://icttoracon.net/archives/category/ictsc2023" target="_blank" style={styles.link}>
               <span style={styles.linkHover}>大会ページ</span>
             </a>
