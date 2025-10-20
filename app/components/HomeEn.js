@@ -109,7 +109,7 @@ export default function HomeEn() {
                     </li>
                     <li style={dynamicStyles.infoItem}>
                         Blog (HomeNOC): {" "}
-                        <a href="https://www.homenoc.ad.jp/blog/" target="_blank" style={styles.link}>
+                        <a href="https://www.homenoc.ad.jp/en/blog/" target="_blank" style={styles.link}>
                             HomeNOC Blog
                         </a>
                     </li>
@@ -132,7 +132,7 @@ export default function HomeEn() {
                     </ul>
                     <li style={dynamicStyles.infoItem}>
                         2024/7-: {" "}
-                        <a href="https://www.homenoc.ad.jp" target="_blank" style={styles.link}>
+                        <a href="https://www.homenoc.ad.jp/en/" target="_blank" style={styles.link}>
                             Home NOC Operators&apos; Group
                         </a>
                     </li>
@@ -178,7 +178,7 @@ export default function HomeEn() {
                     </ul>
                     <li style={dynamicStyles.infoItem}>
                         2024/8: Asia Peering Forum in Chiang Mai {" "}
-                        <a href="https://www.homenoc.ad.jp/blog/report/2024/08/22/AFP2024.html" target="_blank" style={styles.link}>
+                        <a href="https://www.homenoc.ad.jp/blog/report/2024/08/22/AFP2024.en.html" target="_blank" style={styles.link}>
                             <span style={styles.linkHover}>Report</span>
                         </a>
                     </li>
@@ -213,7 +213,7 @@ export default function HomeEn() {
                         </li>
                     </ul>
                     <li style={dynamicStyles.infoItem}>2025/2: APRICOT 2025 in Petaling Jaya {" "}
-                        <a href="https://www.homenoc.ad.jp/blog/report/2025/02/27/apricot2025.html" target="_blank" style={styles.link}>
+                        <a href="https://www.homenoc.ad.jp/blog/report/2025/02/27/apricot2025.en.html" target="_blank" style={styles.link}>
                             <span style={styles.linkHover}>Report</span>
                         </a>
                     </li>
@@ -239,6 +239,52 @@ export default function HomeEn() {
                     <ul style={styles.infoList}>
                         <li style={dynamicStyles.infoSubItem}>Presented &quot;Peering Personal&quot;</li>
                         <li style={dynamicStyles.infoSubItem}>Interacted with local HomeNOC users</li>
+                    </ul>
+                    <li style={dynamicStyles.infoItem}>2025/6: Internet Week Showcase in Nara (NOC Member)</li>
+                    <ul style={styles.infoList}>
+                        <li style={dynamicStyles.infoSubItem}>BackBone / L2,L3 Team Leader {" "}
+                            <a href="https://blog.nic.ad.jp/2025/10695/" target="_blank" style={styles.link}>
+                                <span style={styles.linkHover}>Article</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <li style={dynamicStyles.infoItem}>2025/7/6-10: PhNOG 2025+</li>
+                    <ul style={styles.infoList}>
+                        <li style={dynamicStyles.infoSubItem}>BackBone Team member {" "}
+                            <a href="https://www.homenoc.ad.jp/blog/report/2025/07/23/phnog-2025.en.html" target="_blank" style={styles.link}>
+                                <span style={styles.linkHover}>Report</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <li style={dynamicStyles.infoItem}>2025/7/19-20: IETF123 Hackathon</li>
+                    <ul style={styles.infoList}>
+                        <li style={dynamicStyles.infoSubItem}>&quot;Improving RPKI Repository Efficiency and Practices&quot; work</li>
+                    </ul>
+                    <li style={dynamicStyles.infoItem}>
+                        2025/7: JANOG56 "BoF discussing AS operation by individuals and circles" {" "}
+                        <a href="https://www.homenoc.ad.jp/blog/report/2025/08/09/janog56-bof.html" target="_blank" style={styles.link}>
+                            <span style={styles.linkHover}>Report</span>
+                        </a>
+                    </li>
+                    <ul style={styles.infoList}>
+                        <li style={dynamicStyles.infoSubItem}>Presentation: "The significance (and challenges) of establishing a Philippine POP and operating an international backbone"{" "}
+                            <a href="https://speakerdeck.com/as59105/ge-ren-yasakurudenoasyun-yong-woyi-lun-surubof-janog56?slide=35" target="_blank" style={styles.link}>
+                                <span style={styles.linkHover}>Slides</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <li style={dynamicStyles.infoItem}>
+                        2025/10/7: BAKUCHIKU BANBAN #2 {" "}
+                        <a href="https://bakuchiku.connpass.com/event/367521/" target="_blank" style={styles.link}>
+                            <span style={styles.linkHover}>Event Details</span>
+                        </a>
+                    </li>
+                    <ul style={styles.infoList}>
+                        <li style={dynamicStyles.infoSubItem}>Presentation: "Operational know-how and challenges of eduroam/OpenRoaming as seen from Shirankedo NOC"{" "}
+                            <a href="https://segre.hatenablog.com/entry/2025/10/12/151227" target="_blank" style={styles.link}>
+                                <span style={styles.linkHover}>Blog</span>
+                            </a>
+                        </li>
                     </ul>
                 </ul>
             </section>
@@ -277,6 +323,17 @@ export default function HomeEn() {
                         <li style={dynamicStyles.infoSubItem}>Hands-on training on web security</li>
                         <li style={dynamicStyles.infoSubItem}>Experience in security assessment work</li>
                     </ul>
+                    <li style={dynamicStyles.infoItem}>2025/8/18-9/12: LINE Yahoo Corporation Internship</li>
+                    <ul style={styles.infoList}>
+                        <li style={dynamicStyles.infoSubItem}>"Verification, design, and construction of LINE Yahoo network"</li>
+                        <li style={dynamicStyles.infoSubItem}>Robot patch panel verification</li>
+                        <li style={dynamicStyles.infoSubItem}>RPKI in DC verification</li>
+                    </ul>
+                    <li style={dynamicStyles.infoItem}>2025/9/16-10/10: CyberAgent Internship</li>
+                    <ul style={styles.infoList}>
+                        <li style={dynamicStyles.infoSubItem}>Verification, design, and construction of network infrastructure</li>
+                        <li style={dynamicStyles.infoSubItem}>Design and development of a network automation controller to realize Cycloud VPC</li>
+                    </ul>
                 </ul>
             </section>
 
@@ -294,6 +351,10 @@ export default function HomeEn() {
                     <li style={dynamicStyles.infoItem}>2024/7-: Momiji Tech Inc.</li>
                     <ul style={styles.infoList}>
                         <li style={dynamicStyles.infoSubItem}>Deploying web applications using Docker, Kubernetes, etc.</li>
+                    </ul>
+                    <li style={dynamicStyles.infoItem}>2024/11-: BBIX, Inc.</li>
+                    <ul style={styles.infoList}>
+                        <li style={dynamicStyles.infoSubItem}>Network engineer (part-time)</li>
                     </ul>
                 </ul>
             </section>

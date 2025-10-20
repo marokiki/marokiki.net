@@ -273,6 +273,58 @@ export default function Home() {
             <li style={dynamicStyles.infoSubItem}>Peering Personal 発表</li>
             <li style={dynamicStyles.infoSubItem}>現地のHomeNOCユーザと交流</li>
           </ul>
+          <li style={dynamicStyles.infoItem}>
+            2025/6: Internet Week ショーケース in 奈良 NOC Member
+          </li>
+          <ul style={styles.infoList}>
+            <li style={dynamicStyles.infoSubItem}>BackBone / L2,L3 Team リーダー {" "}
+              <a href="https://blog.nic.ad.jp/2025/10695/" target="_blank" style={styles.link}>
+                <span style={styles.linkHover}>記事</span>
+              </a>
+            </li>
+          </ul>
+          <li style={dynamicStyles.infoItem}>
+            2025/7/6-10: PhNOG 2025+
+          </li>
+          <ul style={styles.infoList}>
+            <li style={dynamicStyles.infoSubItem}>BackBone Team メンバー {" "}
+              <a href="https://www.homenoc.ad.jp/blog/report/2025/07/23/phnog-2025.html" target="_blank" style={styles.link}>
+                <span style={styles.linkHover}>参加報告</span>
+              </a>
+            </li>
+          </ul>
+          <li style={dynamicStyles.infoItem}>
+            2025/7/19-20: IETF123 Hackathon
+          </li>
+          <ul style={styles.infoList}>
+            <li style={dynamicStyles.infoSubItem}> "Improving RPKI Repository Efficiency and Practices" に取り組む </li>
+          </ul>
+          <li style={dynamicStyles.infoItem}>
+            2025/7: JANOG56 「個人やサークルでのAS運用を議論するBoF」
+            <a href="https://www.homenoc.ad.jp/blog/report/2025/08/09/janog56-bof.html" target="_blank" style={styles.link}>
+              <span style={styles.linkHover}>参加報告</span>
+            </a>
+          </li>
+          <ul style={styles.infoList}>
+            <li style={dynamicStyles.infoSubItem}>発表 「フィリピンPOP設立と国際バックボーンを持つ意義(と苦労話)」
+              <a href="https://speakerdeck.com/as59105/ge-ren-yasakurudenoasyun-yong-woyi-lun-surubof-janog56?slide=35" target="_blank" style={styles.link}>
+                <span style={styles.linkHover}>スライド</span>
+              </a>
+            </li>
+          </ul>
+          <li style={dynamicStyles.infoItem}>
+            2025/10/7: BAKUCHIKU BANBAN #2 {" "}
+            <a href="https://bakuchiku.connpass.com/event/367521/" target="_blank" style={styles.link}>
+              <span style={styles.linkHover}>開催概要</span>
+            </a>
+          </li>
+          <ul style={styles.infoList}>
+            <li style={dynamicStyles.infoSubItem}>発表 「Shirankedo NOCで見えてきたeduroam/OpenRoaming運用ノウハウと課題」
+              <a href="https://segre.hatenablog.com/entry/2025/10/12/151227" target="_blank" style={styles.link}>
+                <span style={styles.linkHover}>ブログ記事</span>
+              </a>
+            </li>
+          </ul>
         </ul>
       </section>
 
@@ -324,6 +376,25 @@ export default function Home() {
             </li>
             <li style={dynamicStyles.infoSubItem}>セキュリティ診断業務の体験</li>
           </ul>
+          <li style={dynamicStyles.infoItem}>
+            2025/8/18-9/12: LINEヤフー株式会社 インターン
+          </li>
+          <ul style={styles.infoList}>
+            <li style={dynamicStyles.infoSubItem}>
+              「LINEヤフーネットワークの検証・設計・構築」
+            </li>
+            <li style={dynamicStyles.infoSubItem}>ロボットパッチパネル検証</li>
+            <li style={dynamicStyles.infoSubItem}>RPKI in DC 検証</li>
+          </ul>
+          <li style={dynamicStyles.infoItem}>
+            2025/9/16-10/10: サイバーエージェント インターン
+          </li>
+          <ul style={styles.infoList}>
+            <li style={dynamicStyles.infoSubItem}>
+              ネットワークインフラの検証・設計・構築
+            </li>
+            <li style={dynamicStyles.infoSubItem}>Cycloud の VPC を実現するネットワーク自動化コントローラの設計と開発</li>
+          </ul>
         </ul>
       </section>
 
@@ -342,6 +413,12 @@ export default function Home() {
           <ul style={styles.infoList}>
             <li style={dynamicStyles.infoSubItem}>
               Docker, Kubernetes を用いたWebアプリケーションのデプロイ等
+            </li>
+          </ul>
+          <li style={dynamicStyles.infoItem}>2025/6-: BBIX株式会社</li>
+          <ul style={styles.infoList}>
+            <li style={dynamicStyles.infoSubItem}>
+              バックボーンネットワークの検証
             </li>
           </ul>
         </ul>
