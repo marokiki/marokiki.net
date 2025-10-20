@@ -297,7 +297,7 @@ export default function Home() {
             2025/7/19-20: IETF123 Hackathon
           </li>
           <ul style={styles.infoList}>
-            <li style={dynamicStyles.infoSubItem}> "Improving RPKI Repository Efficiency and Practices" に取り組む </li>
+            <li style={dynamicStyles.infoSubItem}> &quot;Improving RPKI Repository Efficiency and Practices&quot; に取り組む </li>
           </ul>
           <li style={dynamicStyles.infoItem}>
             2025/7: JANOG56 「個人やサークルでのAS運用を議論するBoF」

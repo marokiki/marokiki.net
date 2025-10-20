@@ -261,13 +261,13 @@ export default function HomeEn() {
                         <li style={dynamicStyles.infoSubItem}>&quot;Improving RPKI Repository Efficiency and Practices&quot; work</li>
                     </ul>
                     <li style={dynamicStyles.infoItem}>
-                        2025/7: JANOG56 "BoF discussing AS operation by individuals and circles" {" "}
+                        2025/7: JANOG56 &quot;BoF discussing AS operation by individuals and circles&quot; {" "}
                         <a href="https://www.homenoc.ad.jp/blog/report/2025/08/09/janog56-bof.html" target="_blank" style={styles.link}>
                             <span style={styles.linkHover}>Report</span>
                         </a>
                     </li>
                     <ul style={styles.infoList}>
-                        <li style={dynamicStyles.infoSubItem}>Presentation: "The significance (and challenges) of establishing a Philippine POP and operating an international backbone"{" "}
+                        <li style={dynamicStyles.infoSubItem}>Presentation: &quot;The significance (and challenges) of establishing a Philippine POP and operating an international backbone&quot;{" "}
                             <a href="https://speakerdeck.com/as59105/ge-ren-yasakurudenoasyun-yong-woyi-lun-surubof-janog56?slide=35" target="_blank" style={styles.link}>
                                 <span style={styles.linkHover}>Slides</span>
                             </a>
@@ -280,7 +280,7 @@ export default function HomeEn() {
                         </a>
                     </li>
                     <ul style={styles.infoList}>
-                        <li style={dynamicStyles.infoSubItem}>Presentation: "Operational know-how and challenges of eduroam/OpenRoaming as seen from Shirankedo NOC"{" "}
+                        <li style={dynamicStyles.infoSubItem}>Presentation: &quot;Operational know-how and challenges of eduroam/OpenRoaming as seen from Shirankedo NOC&quot;{" "}
                             <a href="https://segre.hatenablog.com/entry/2025/10/12/151227" target="_blank" style={styles.link}>
                                 <span style={styles.linkHover}>Blog</span>
                             </a>
@@ -325,7 +325,7 @@ export default function HomeEn() {
                     </ul>
                     <li style={dynamicStyles.infoItem}>2025/8/18-9/12: LINE Yahoo Corporation Internship</li>
                     <ul style={styles.infoList}>
-                        <li style={dynamicStyles.infoSubItem}>"Verification, design, and construction of LINE Yahoo network"</li>
+                        <li style={dynamicStyles.infoSubItem}>&quot;Verification, design, and construction of LINE Yahoo network&quot;</li>
                         <li style={dynamicStyles.infoSubItem}>Robot patch panel verification</li>
                         <li style={dynamicStyles.infoSubItem}>RPKI in DC verification</li>
                     </ul>
