@@ -132,6 +132,12 @@ export default function Home() {
           <Card>
             <h3 className="font-bold text-lg mb-3 border-b border-card-border pb-2">イベント・カンファレンス</h3>
             <div className="space-y-4">
+              <EventItem date="2025/12" title="CKP九州連携研究会 2025 with QBP & QGPOP" role="発表: Team Shirankedoの活動とShirankedo NOCにおけるeduroam/OpenRoaming運用ノウハウおよび課題" />
+              <EventItem date="2025/11" title="Internet Week 2025" role="プログラム委員/NOC L2,L3 Team Leader" />
+              <EventItem date="2025/11" title="Peering Asia 7.0" role="Peering Personal / Peering Coodination">
+                <Link href="https://www.homenoc.ad.jp/blog/report/2026/01/03/peering-asia-2025.html" text="Blog" />
+              </EventItem>
+              <EventItem date="2025/10" title="HKNOG 14.0" role="参加" />
               <EventItem date="2025/10" title="BAKUCHIKU BANBAN #2" role="発表: Shirankedo NOCで見えてきたeduroam/OpenRoaming運用ノウハウと課題">
                 <Link href="https://bakuchiku.connpass.com/event/367521/" text="概要" />
                 <Link href="https://segre.hatenablog.com/entry/2025/10/12/151227" text="ブログ" />

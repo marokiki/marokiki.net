@@ -133,6 +133,12 @@ export default function HomeEn() {
                     <Card>
                         <h3 className="font-bold text-lg mb-3 border-b border-card-border pb-2">Events & Conferences</h3>
                         <div className="space-y-4">
+                            <EventItem date="2025/12" title="CKP Kyushu Joint Study Meeting 2025 with QBP & QGPOP" role="Presentation: Activities of Team Shirankedo and eduroam/OpenRoaming operation know-how and challenges at Shirankedo NOC" />
+                            <EventItem date="2025/11" title="Internet Week 2025" role="Program Committee/NOC L2,L3 Team Leader" />
+                            <EventItem date="2025/11" title="Peering Asia 7.0" role="Peering Personal / Peering Coordination">
+                                <Link href="https://www.homenoc.ad.jp/blog/report/2026/01/03/peering-asia-2025.html" text="Report" />
+                            </EventItem>
+                            <EventItem date="2025/10" title="HKNOG 14.0" role="Attendee" />
                             <EventItem date="2025/10" title="BAKUCHIKU BANBAN #2" role="Presentation: Operational know-how and challenges of eduroam/OpenRoaming">
                                 <Link href="https://bakuchiku.connpass.com/event/367521/" text="Event Details" />
                                 <Link href="https://segre.hatenablog.com/entry/2025/10/12/151227" text="Blog" />
