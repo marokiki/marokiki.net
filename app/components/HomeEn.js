@@ -220,7 +220,7 @@ export default function HomeEn() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <Card>
                         <h3 className="font-bold">BBIX, Inc.</h3>
-                        <p className="text-sm text-secondary mb-2">2024/11 - Now</p>
+                        <p className="text-sm text-secondary mb-2">2024/11 - 2025/12</p>
                         <p className="text-sm">Network engineer (part-time)</p>
                     </Card>
                     <Card>

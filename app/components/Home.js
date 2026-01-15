@@ -219,7 +219,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card>
             <h3 className="font-bold">BBIX株式会社</h3>
-            <p className="text-sm text-secondary mb-2">2025/6 - Now</p>
+            <p className="text-sm text-secondary mb-2">2025/6 - 2025/12</p>
             <p className="text-sm">バックボーンネットワークの検証</p>
           </Card>
           <Card>
