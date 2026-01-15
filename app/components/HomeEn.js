@@ -34,16 +34,16 @@ export default function HomeEn() {
                     <div className="flex-1 space-y-2 text-center md:text-left">
                         <h3 className="text-2xl font-bold">Tomoki Yoshikawa</h3>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 text-secondary">
-                            <a href="https://x.com/_marokiki" target="_blank" className="hover:text-primary transition-colors flex items-center gap-2 justify-center md:justify-start">
+                            <a href="https://x.com/_marokiki" target="_blank" className="hover:text-primary transition-colors flex items-center gap-2 justify-center md:justify-start underline decoration-primary/50 hover:decoration-primary">
                                 <span>𝕏</span> @_marokiki
                             </a>
-                            <a href="https://github.com/marokiki" target="_blank" className="hover:text-primary transition-colors flex items-center gap-2 justify-center md:justify-start">
+                            <a href="https://github.com/marokiki" target="_blank" className="hover:text-primary transition-colors flex items-center gap-2 justify-center md:justify-start underline decoration-primary/50 hover:decoration-primary">
                                 GitHub: @marokiki
                             </a>
-                            <a href="https://facebook.com/marokiki.net" target="_blank" className="hover:text-primary transition-colors flex items-center gap-2 justify-center md:justify-start">
+                            <a href="https://facebook.com/marokiki.net" target="_blank" className="hover:text-primary transition-colors flex items-center gap-2 justify-center md:justify-start underline decoration-primary/50 hover:decoration-primary">
                                 Facebook: marokiki.net
                             </a>
-                            <a href="mailto:segre@marokiki.net" className="hover:text-primary transition-colors flex items-center gap-2 justify-center md:justify-start">
+                            <a href="mailto:segre@marokiki.net" className="hover:text-primary transition-colors flex items-center gap-2 justify-center md:justify-start underline decoration-primary/50 hover:decoration-primary">
                                 Email: segre@marokiki.net
                             </a>
                         </div>
@@ -78,21 +78,27 @@ export default function HomeEn() {
 
             <Section title="Blogs">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <a href="https://qiita.com/marokiki" target="_blank" className="block h-full">
-                        <Card className="h-full hover:border-primary/50 transition-colors">
-                            <h3 className="font-bold mb-2">Qiita</h3>
+                    <a href="https://qiita.com/marokiki" target="_blank" className="block h-full group">
+                        <Card className="h-full group-hover:border-primary/50 transition-colors">
+                            <h3 className="font-bold mb-2 group-hover:text-primary transition-colors flex items-center gap-2">
+                                Qiita <span className="text-secondary group-hover:text-primary text-xs">↗</span>
+                            </h3>
                             <p className="text-sm text-secondary">marokiki</p>
                         </Card>
                     </a>
-                    <a href="https://blog.kmc.gr.jp/search?q=segre" target="_blank" className="block h-full">
-                        <Card className="h-full hover:border-primary/50 transition-colors">
-                            <h3 className="font-bold mb-2">Hatena Blog (KMC)</h3>
+                    <a href="https://blog.kmc.gr.jp/search?q=segre" target="_blank" className="block h-full group">
+                        <Card className="h-full group-hover:border-primary/50 transition-colors">
+                            <h3 className="font-bold mb-2 group-hover:text-primary transition-colors flex items-center gap-2">
+                                Hatena Blog (KMC) <span className="text-secondary group-hover:text-primary text-xs">↗</span>
+                            </h3>
                             <p className="text-sm text-secondary">KMC Activity Blog</p>
                         </Card>
                     </a>
-                    <a href="https://www.homenoc.ad.jp/en/blog/" target="_blank" className="block h-full">
-                        <Card className="h-full hover:border-primary/50 transition-colors">
-                            <h3 className="font-bold mb-2">Blog (HomeNOC)</h3>
+                    <a href="https://www.homenoc.ad.jp/en/blog/" target="_blank" className="block h-full group">
+                        <Card className="h-full group-hover:border-primary/50 transition-colors">
+                            <h3 className="font-bold mb-2 group-hover:text-primary transition-colors flex items-center gap-2">
+                                Blog (HomeNOC) <span className="text-secondary group-hover:text-primary text-xs">↗</span>
+                            </h3>
                             <p className="text-sm text-secondary">HomeNOC Blog</p>
                         </Card>
                     </a>
