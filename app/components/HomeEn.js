@@ -230,7 +230,7 @@ export default function HomeEn() {
                     </Card>
                     <Card>
                         <h3 className="font-bold">Enzan Kobo Co., Ltd.</h3>
-                        <p className="text-sm text-secondary mb-2">2021/10 - Now</p>
+                        <p className="text-sm text-secondary mb-2">2021/10 - 2024/3</p>
                         <p className="text-sm">Windows Form, WPF development</p>
                     </Card>
                     <Card>

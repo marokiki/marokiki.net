@@ -229,7 +229,7 @@ export default function Home() {
           </Card>
           <Card>
             <h3 className="font-bold">株式会社演算工房</h3>
-            <p className="text-sm text-secondary mb-2">2021/10 - Now</p>
+            <p className="text-sm text-secondary mb-2">2021/10 - 2024/3</p>
             <p className="text-sm">Windows Form, WPF 開発</p>
           </Card>
           <Card>
