@@ -85,12 +85,12 @@ export default function Home() {
               <p className="text-sm text-secondary">marokiki</p>
             </Card>
           </a>
-          <a href="https://blog.kmc.gr.jp/search?q=segre" target="_blank" className="block h-full group">
+          <a href="https://segre.hatenablog.com" target="_blank" className="block h-full group">
             <Card className="h-full group-hover:border-primary/50 transition-colors">
               <h3 className="font-bold mb-2 group-hover:text-primary transition-colors flex items-center gap-2">
-                Hatena Blog (KMC) <span className="text-secondary group-hover:text-primary text-xs">↗</span>
+                Hatena Blog <span className="text-secondary group-hover:text-primary text-xs">↗</span>
               </h3>
-              <p className="text-sm text-secondary">KMC活動ブログ</p>
+              <p className="text-sm text-secondary">segre.hatenablog.com</p>
             </Card>
           </a>
           <a href="https://www.homenoc.ad.jp/blog/" target="_blank" className="block h-full group">
@@ -132,6 +132,23 @@ export default function Home() {
           <Card>
             <h3 className="font-bold text-lg mb-3 border-b border-card-border pb-2">イベント・カンファレンス</h3>
             <div className="space-y-4">
+              <EventItem date="2026/3" title="ICTSC2025" role="チーム「KOC」準優勝">
+                <Link href="https://icttoracon.net/archives/category/ictsc2025" text="HP" />
+              </EventItem>
+              <EventItem
+                date="2026/2"
+                title="JANOG57"
+                role={
+                  <>
+                    <div>NOC BackBone / L2,L3 Team Leader</div>
+                    <div>プログラム委員</div>
+                    <div>発表: イベントネットワークの最前線を語ろう ― JANOG57会場ネットワークの知見とこれから</div>
+                  </>
+                }
+              >
+                <Link href="https://www.janog.gr.jp/meeting/janog57/evnw/" text="発表概要" />
+                <Link href="https://noc.janog57.ishikari-dc.jp" text="NOC概要" />
+              </EventItem>
               <EventItem date="2025/12" title="CKP九州連携研究会 2025 with QBP & QGPOP" role="発表: Team Shirankedoの活動とShirankedo NOCにおけるeduroam/OpenRoaming運用ノウハウおよび課題" />
               <EventItem date="2025/11" title="Internet Week 2025" role="プログラム委員/NOC L2,L3 Team Leader" />
               <EventItem date="2025/11" title="Peering Asia 7.0" role="Peering Personal / Peering Coodination">
@@ -147,7 +164,7 @@ export default function Home() {
                 <Link href="https://speakerdeck.com/as59105/ge-ren-yasakurudenoasyun-yong-woyi-lun-surubof-janog56?slide=35" text="スライド" />
               </EventItem>
               <EventItem date="2025/7" title="IETF123 Hackathon" role="Topic: RPKI Repository Efficiency" />
-              <EventItem date="2025/7" title="PhNOG 2025+" role="BackBone Team Member">
+              <EventItem date="2025/7" title="PhNOG 2025+" role="参加">
                 <Link href="https://www.homenoc.ad.jp/blog/report/2025/07/23/phnog-2025.html" text="報告" />
               </EventItem>
               <EventItem date="2025/6" title="Internet Week ショーケース in 奈良" role="BackBone / L2,L3 Team Leader">

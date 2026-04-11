@@ -86,12 +86,12 @@ export default function HomeEn() {
                             <p className="text-sm text-secondary">marokiki</p>
                         </Card>
                     </a>
-                    <a href="https://blog.kmc.gr.jp/search?q=segre" target="_blank" className="block h-full group">
+                    <a href="https://segre.hatenablog.com" target="_blank" className="block h-full group">
                         <Card className="h-full group-hover:border-primary/50 transition-colors">
                             <h3 className="font-bold mb-2 group-hover:text-primary transition-colors flex items-center gap-2">
-                                Hatena Blog (KMC) <span className="text-secondary group-hover:text-primary text-xs">↗</span>
+                                Hatena Blog <span className="text-secondary group-hover:text-primary text-xs">↗</span>
                             </h3>
-                            <p className="text-sm text-secondary">KMC Activity Blog</p>
+                            <p className="text-sm text-secondary">segre.hatenablog.com</p>
                         </Card>
                     </a>
                     <a href="https://www.homenoc.ad.jp/en/blog/" target="_blank" className="block h-full group">
@@ -133,6 +133,23 @@ export default function HomeEn() {
                     <Card>
                         <h3 className="font-bold text-lg mb-3 border-b border-card-border pb-2">Events & Conferences</h3>
                         <div className="space-y-4">
+                            <EventItem date="2026/3" title="ICTSC2025" role="Team &quot;KOC&quot; Runner-up">
+                                <Link href="https://icttoracon.net/archives/category/ictsc2025" text="Event page" />
+                            </EventItem>
+                            <EventItem
+                                date="2026/2"
+                                title="JANOG57"
+                                role={
+                                    <>
+                                        <div>NOC BackBone / L2,L3 Team Leader</div>
+                                        <div>Program Committee</div>
+                                        <div>Presentation: Talking about the forefront of event networks - insights from the JANOG57 venue network and what comes next</div>
+                                    </>
+                                }
+                            >
+                                <Link href="https://www.janog.gr.jp/meeting/janog57/evnw/" text="Presentation Details" />
+                                <Link href="https://noc.janog57.ishikari-dc.jp" text="NOC Overview" />
+                            </EventItem>
                             <EventItem date="2025/12" title="CKP Kyushu Joint Study Meeting 2025 with QBP & QGPOP" role="Presentation: Activities of Team Shirankedo and eduroam/OpenRoaming operation know-how and challenges at Shirankedo NOC" />
                             <EventItem date="2025/11" title="Internet Week 2025" role="Program Committee/NOC L2,L3 Team Leader" />
                             <EventItem date="2025/11" title="Peering Asia 7.0" role="Peering Personal / Peering Coordination">
@@ -148,7 +165,7 @@ export default function HomeEn() {
                                 <Link href="https://speakerdeck.com/as59105/ge-ren-yasakurudenoasyun-yong-woyi-lun-surubof-janog56?slide=35" text="Slides" />
                             </EventItem>
                             <EventItem date="2025/7" title="IETF123 Hackathon" role="Topic: RPKI Repository Efficiency" />
-                            <EventItem date="2025/7" title="PhNOG 2025+" role="BackBone Team Member">
+                            <EventItem date="2025/7" title="PhNOG 2025+" role="Attendee">
                                 <Link href="https://www.homenoc.ad.jp/blog/report/2025/07/23/phnog-2025.en.html" text="Report" />
                             </EventItem>
                             <EventItem date="2025/6" title="Internet Week Showcase in Nara" role="BackBone / L2,L3 Team Leader">
