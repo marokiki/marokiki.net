@@ -10,7 +10,8 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        primary: "var(--primary)",
+        primary: "rgb(var(--primary-rgb) / <alpha-value>)",
+        "card-border": "var(--card-border)",
         secondary: "var(--secondary)",
       },
     },

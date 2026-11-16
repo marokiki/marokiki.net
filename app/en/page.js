@@ -5,7 +5,7 @@ import LanguageToggle from "../components/LanguageToggle";
 export default function Page() {
     return (
         <>
-            <div style={{ display: 'flex', alignItems: 'center' }}>
+            <div className="page-controls">
                 <ThemeToggle />
                 <LanguageToggle />
             </div>

@@ -2,15 +2,13 @@ import localFont from "next/font/local";
 import { ThemeProvider } from "./components/ThemeProvider";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const lineSeedJP = localFont({
+  src: [
+    { path: "./fonts/LINESeedJP-Regular.woff2", weight: "400", style: "normal" },
+    { path: "./fonts/LINESeedJP-Bold.woff2", weight: "700", style: "normal" },
+  ],
+  variable: "--font-line-seed-jp",
+  display: "swap",
 });
 
 export const metadata = {
@@ -25,7 +23,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.png" type="image/png" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${lineSeedJP.variable} antialiased`}
       >
         <ThemeProvider>{children}</ThemeProvider>
       </body>

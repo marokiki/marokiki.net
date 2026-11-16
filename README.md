@@ -18,7 +18,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This project uses [`next/font/local`](https://nextjs.org/docs/app/api-reference/components/font#local-fonts) to self-host LINE Seed JP (Regular and Bold) for both Japanese and English. Font files are from the [official LINE Seed release v20260828](https://github.com/line/seed/releases/tag/v20260828); the SIL Open Font License and authors are included in `app/fonts/`.
 
 ## Learn More
 

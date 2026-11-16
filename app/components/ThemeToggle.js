@@ -12,8 +12,10 @@ export const ThemeToggle = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 rounded-full border-2 flex items-center justify-center ml-2 mt-1"
-      aria-label="Toggle Theme"
+      type="button"
+      className="p-2 rounded-lg border border-[var(--card-border)] bg-[var(--card-bg)] text-foreground flex items-center justify-center hover:border-primary hover:text-primary transition-colors"
+      aria-label={currentTheme === "dark" ? "Use light theme" : "Use dark theme"}
+      title={currentTheme === "dark" ? "Use light theme" : "Use dark theme"}
     >
       {currentTheme === "dark" ? (
         <svg

@@ -39,11 +39,11 @@ export default function LanguageToggle() {
     };
 
     return (
-        <div className="ml-2 mt-1 flex items-center">
-            <button onClick={chooseJa} className={`p-2 rounded border ${pref === 'ja' ? 'opacity-100' : 'opacity-70'}`} aria-label="日本語">
+        <div className="ml-2 flex items-center gap-1" aria-label="Language">
+            <button type="button" onClick={chooseJa} className={`min-w-10 px-2 py-1.5 rounded-md border text-sm font-medium transition-colors ${pref === 'ja' ? 'border-primary bg-[var(--accent-bg)] text-[var(--primary-strong)]' : 'border-transparent text-secondary hover:text-foreground hover:border-[var(--card-border)]'}`} aria-label="日本語" aria-pressed={pref === 'ja'}>
                 JA
             </button>
-            <button onClick={chooseEn} className={`p-2 rounded border ml-2 ${pref === 'en' ? 'opacity-100' : 'opacity-70'}`} aria-label="English">
+            <button type="button" onClick={chooseEn} className={`min-w-10 px-2 py-1.5 rounded-md border text-sm font-medium transition-colors ${pref === 'en' ? 'border-primary bg-[var(--accent-bg)] text-[var(--primary-strong)]' : 'border-transparent text-secondary hover:text-foreground hover:border-[var(--card-border)]'}`} aria-label="English" aria-pressed={pref === 'en'}>
                 EN
             </button>
         </div>

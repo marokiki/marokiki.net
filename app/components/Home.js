@@ -13,12 +13,12 @@ export default function Home() {
   }
 
   return (
-    <div className="max-w-4xl mx-auto p-6 text-foreground">
-      <header className="text-center mb-16 mt-8">
-        <h1 className="text-5xl font-extrabold tracking-tight mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400">
+    <div className="max-w-5xl mx-auto px-5 py-8 md:px-8 text-foreground">
+      <header className="profile-header">
+        <h1 className="profile-name">
           Tomoki Yoshikawa
         </h1>
-        <p className="text-xl text-secondary">Network Engineer / Developer</p>
+        <p className="profile-role">Network Engineer / Developer</p>
       </header>
 
       <Section title="About Me">
@@ -26,13 +26,16 @@ export default function Home() {
           <div className="relative w-32 h-32 flex-shrink-0">
             <Image
               src="/profile.png"
+              priority
               alt="Tomoki Yoshikawa"
               fill
               className="rounded-full object-cover border-4 border-primary/20"
             />
           </div>
           <div className="flex-1 space-y-2 text-center md:text-left">
-            <h3 className="text-2xl font-bold">吉川 知輝 (よしかわ ともき)</h3>
+            <h3 className="text-2xl font-bold">
+              吉川 知輝 <span className="inline-block text-base font-normal text-secondary">（よしかわ ともき）</span>
+            </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 text-secondary">
               <a href="https://x.com/_marokiki" target="_blank" className="hover:text-primary transition-colors flex items-center gap-2 justify-center md:justify-start underline decoration-primary/50 hover:decoration-primary">
                 <span>𝕏</span> @_marokiki
@@ -56,20 +59,20 @@ export default function Home() {
           <Card>
             <div className="flex flex-col md:flex-row md:justify-between md:items-baseline">
               <span className="font-bold text-lg">京都大学大学院情報学研究科 通信情報システムコース 修士課程</span>
-              <span className="text-sm text-secondary font-mono">2025/4 - Now</span>
+              <span className="text-sm text-secondary tabular-nums">2025/4 - Now</span>
             </div>
             <p className="text-secondary mt-1">岡部研究室</p>
           </Card>
           <Card>
             <div className="flex flex-col md:flex-row md:justify-between md:items-baseline">
               <span className="font-bold text-lg">京都大学工学部情報学研究科計算機科学コース</span>
-              <span className="text-sm text-secondary font-mono">2021/4 - 2025/3</span>
+              <span className="text-sm text-secondary tabular-nums">2021/4 - 2025/3</span>
             </div>
           </Card>
           <Card>
             <div className="flex flex-col md:flex-row md:justify-between md:items-baseline">
               <span className="font-bold text-lg">大阪教育大学附属高等学校池田校舎</span>
-              <span className="text-sm text-secondary font-mono">2018/4 - 2021/3</span>
+              <span className="text-sm text-secondary tabular-nums">2018/4 - 2021/3</span>
             </div>
           </Card>
         </div>
@@ -109,7 +112,7 @@ export default function Home() {
           <Card>
             <div className="flex justify-between items-baseline mb-2">
               <h3 className="font-bold text-lg"><a href="https://www.kmc.gr.jp" target="_blank" className="hover:underline hover:text-primary">京大マイコンクラブ (KMC)</a></h3>
-              <span className="text-sm text-secondary font-mono">2021/4 - Now</span>
+              <span className="text-sm text-secondary tabular-nums">2021/4 - Now</span>
             </div>
             <ul className="list-disc list-inside text-secondary space-y-1 ml-2">
               <li>45代 副会長 / 46代 副代表</li>
@@ -120,7 +123,7 @@ export default function Home() {
           <Card>
             <div className="flex justify-between items-baseline mb-2">
               <h3 className="font-bold text-lg"><a href="https://www.homenoc.ad.jp" target="_blank" className="hover:underline hover:text-primary">Home NOC Operators&apos; Group</a></h3>
-              <span className="text-sm text-secondary font-mono">2024/7 - Now</span>
+              <span className="text-sm text-secondary tabular-nums">2024/7 - Now</span>
             </div>
             <ul className="list-disc list-inside text-secondary space-y-1 ml-2">
               <li>正会員 / AS59105運用</li>
@@ -130,8 +133,21 @@ export default function Home() {
           </Card>
 
           <Card>
-            <h3 className="font-bold text-lg mb-3 border-b border-card-border pb-2">イベント・カンファレンス</h3>
-            <div className="space-y-4">
+            <h3 className="font-bold text-lg mb-1">カンファレンス・学会</h3>
+            <div className="space-y-4 mt-5">
+              <EventItem date="2026/7" title="IETF 126" role="発表: Post-Quantum Signature Algorithm Profile and Migration Considerations for the Resource Public Key Infrastructure (RPKI)" featured>
+                <Link href="https://datatracker.ietf.org/meeting/126/materials/slides-126-sidrops-post-quantum-signature-algorithm-profile-and-migration-considerations-for-the-resource-public-key-infrastructure-rpki-00" text="発表資料" />
+                <Link href="https://datatracker.ietf.org/meeting/126/session/sidrops/" text="セッション" />
+                <Link href="https://datatracker.ietf.org/meeting/126/materials/slides-126-sidrops-post-quantum-signature-algorithm-profile-and-migration-considerations-for-the-resource-public-key-infrastructure-rpki-00.pdf" text="PDF" />
+              </EventItem>
+              <EventItem date="2026/7" title="JANOG58" role="プログラム委員 / 発表: 『坂の上の雲』へ続く道は、どこにあるのか" featured>
+                <Link href="https://www.janog.gr.jp/meeting/janog58/pr-sakanouenokumo/" text="発表概要" />
+              </EventItem>
+              <EventItem date="2026/5" title="TWNOG 7.0" role="発表: Bridging Communities — HomeNOC's New PoP in Taiwan" featured>
+                <Link href="https://speakerdeck.com/as59105/bridging-communities-homenocs-new-pop-in-taiwan" text="スライド" />
+                <Link href="https://2026.twnog.net/agenda/c8d38c" text="発表概要" />
+              </EventItem>
+              <EventItem date="2026/4" title="RubyKaigi 2026 NOC" role="Member (Cabling)" featured />
               <EventItem date="2026/3" title="ICTSC2025" role="チーム「KOC」準優勝">
                 <Link href="https://icttoracon.net/archives/category/ictsc2025" text="HP" />
               </EventItem>
@@ -149,6 +165,7 @@ export default function Home() {
                 <Link href="https://www.janog.gr.jp/meeting/janog57/evnw/" text="発表概要" />
                 <Link href="https://noc.janog57.ishikari-dc.jp" text="NOC概要" />
               </EventItem>
+              <HistoryDisclosure summary="2025年以前のカンファレンス・学会（22件）">
               <EventItem date="2025/12" title="CKP九州連携研究会 2025 with QBP & QGPOP" role="発表: Team Shirankedoの活動とShirankedo NOCにおけるeduroam/OpenRoaming運用ノウハウおよび課題" />
               <EventItem date="2025/11" title="Internet Week 2025" role="プログラム委員/NOC L2,L3 Team Leader" />
               <EventItem date="2025/11" title="Peering Asia 7.0" role="Peering Personal / Peering Coodination">
@@ -204,6 +221,7 @@ export default function Home() {
                 <Link href="https://icttoracon.net/archives/category/ictsc2023" text="HP" />
               </EventItem>
               <EventItem date="2023/10" title="IGF 2023 Kyoto" role="一般参加" />
+              </HistoryDisclosure>
             </div>
           </Card>
         </div>
@@ -214,33 +232,41 @@ export default function Home() {
           <InternshipCard
             company="サイバーエージェント"
             date="2025/9 - 10"
-            desc="ネットワークインフラ検証・設計・構築。Cycloud VPC用の自動化コントローラ設計開発。"
+            desc="ネットワークインフラの検証・設計・構築と、Cycloud VPC向けネットワーク自動化コントローラの設計・開発を担当しました。"
+            href="https://developers.cyberagent.co.jp/blog/archives/59362/"
+            linkText="執筆記事"
+            featured
           />
           <InternshipCard
             company="LINEヤフー"
             date="2025/8 - 9"
-            desc="ネットワーク検証・設計・構築。ロボットパッチパネル検証、RPKI in DC検証。"
+            desc="ネットワークの検証・設計・構築、ロボットパッチパネルとデータセンターでのRPKI導入に関する検証に取り組みました。"
+            featured
           />
+          <div className="md:col-span-2">
+            <HistoryDisclosure summary="過去のインターン（4件）">
           <InternshipCard
             company="Flatt Security"
             date="2024/9"
-            desc="Webセキュリティハンズオン、セキュリティ診断業務体験。"
+            desc="Webセキュリティのハンズオンと、セキュリティ診断業務を体験しました。"
           />
           <InternshipCard
             company="Yahoo! JAPAN"
             date="2023/8 - 9"
-            desc="コンテンツ配信システム構築。インフラ設計・レビュー、各種サーバー・NW機器構築。"
+            desc="コンテンツ配信システムの構築に参加し、インフラの設計・レビューとサーバー・ネットワーク機器の構築を担当しました。"
           />
           <InternshipCard
             company="DMM.com"
             date="2023/8"
-            desc="ネットワークインフラコース。ルーターエンジン検証、Ansible自動化。"
+            desc="ネットワークインフラコースに参加し、ルーターエンジンの検証とAnsibleによる自動化に取り組みました。"
           />
           <InternshipCard
             company="NTT研究所"
             date="2023/2 - 3"
-            desc="セキュリティ可視化・脆弱性影響分析。L2プロトコル実装。"
+            desc="セキュリティ可視化を用いた脆弱性影響分析と、レイヤー2プロトコルの実装に取り組みました。"
           />
+            </HistoryDisclosure>
+          </div>
         </div>
       </Section>
 
@@ -256,6 +282,8 @@ export default function Home() {
             <p className="text-sm text-secondary mb-2">2024/7 - Now</p>
             <p className="text-sm">Docker, Kubernetes を用いたWebアプリデプロイ等</p>
           </Card>
+          <div className="md:col-span-2">
+            <HistoryDisclosure summary="過去のアルバイト（2件）">
           <Card>
             <h3 className="font-bold">株式会社演算工房</h3>
             <p className="text-sm text-secondary mb-2">2021/10 - 2024/3</p>
@@ -266,6 +294,8 @@ export default function Home() {
             <p className="text-sm text-secondary mb-2">2022/10 - 2024/11</p>
             <p className="text-sm">C++ を用いたゲーム開発</p>
           </Card>
+            </HistoryDisclosure>
+          </div>
         </div>
       </Section>
 
@@ -274,18 +304,18 @@ export default function Home() {
           <ul className="space-y-2">
             <li className="flex justify-between items-center border-b border-card-border last:border-0 pb-2 last:pb-0">
               <span>IPA ネットワークスペシャリスト試験 合格</span>
-              <span className="text-sm text-secondary font-mono">2024/7</span>
+              <span className="text-sm text-secondary tabular-nums">2024/7</span>
             </li>
             <li className="flex justify-between items-center border-b border-card-border last:border-0 pb-2 last:pb-0">
               <span>Basic SecCap7 修了</span>
-              <span className="text-sm text-secondary font-mono">2024/3</span>
+              <span className="text-sm text-secondary tabular-nums">2024/3</span>
             </li>
           </ul>
         </Card>
       </Section>
 
       <footer className="mt-20 pt-8 border-t border-card-border text-center text-secondary">
-        <p>© 2025 Tomoki Yoshikawa</p>
+        <p>© 2026 Tomoki Yoshikawa</p>
       </footer>
     </div>
   );
@@ -298,7 +328,7 @@ function Link({ href, text }) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="ml-2 inline-flex items-center gap-1 text-xs font-medium text-primary hover:text-white border border-primary/30 bg-primary/5 hover:bg-primary px-2 py-0.5 rounded-md transition-all duration-200"
+      className="ml-2 inline-flex items-center gap-1 text-xs font-medium text-primary hover:text-[var(--on-primary)] border border-primary/30 bg-primary/5 hover:bg-primary px-2 py-0.5 rounded-md transition-all duration-200"
     >
       <span className="relative top-[0.5px]">{text}</span>
       <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
@@ -306,11 +336,23 @@ function Link({ href, text }) {
   );
 }
 
-function EventItem({ date, title, role, children }) {
+function HistoryDisclosure({ summary, children }) {
   return (
-    <div className="flex flex-col md:flex-row md:items-baseline gap-1 md:gap-4 border-l-2 border-card-border pl-4 pb-1 relative">
-      <div className="absolute -left-[5px] top-2 w-2 h-2 rounded-full bg-secondary"></div>
-      <div className="flex-shrink-0 w-24 text-sm text-secondary font-mono">{date}</div>
+    <details className="history-disclosure rounded-lg border border-[var(--card-border)] bg-[var(--background)]/60">
+      <summary className="cursor-pointer select-none list-none flex items-center justify-between gap-4 px-4 py-3 font-medium text-[var(--primary-strong)] hover:bg-[var(--accent-bg)] rounded-lg transition-colors">
+        <span>{summary}</span>
+        <span className="history-chevron transition-transform" aria-hidden="true">⌄</span>
+      </summary>
+      <div className="space-y-4 px-4 pb-4 pt-2">{children}</div>
+    </details>
+  );
+}
+
+function EventItem({ date, title, role, children, featured = false }) {
+  return (
+    <div className={`flex flex-col md:flex-row md:items-baseline gap-1 md:gap-4 border-l-2 pl-4 py-1 relative ${featured ? "border-primary" : "border-card-border"}`}>
+      <div className={`absolute -left-[5px] top-3 w-2 h-2 rounded-full ${featured ? "bg-primary ring-4 ring-[var(--accent-bg)]" : "bg-secondary"}`}></div>
+      <div className="flex-shrink-0 w-24 text-sm text-secondary tabular-nums">{date}</div>
       <div className="flex-1">
         <div className="font-medium text-foreground flex flex-wrap items-center gap-y-1">
           <span className="mr-1">{title}</span>
@@ -322,11 +364,14 @@ function EventItem({ date, title, role, children }) {
   );
 }
 
-function InternshipCard({ company, date, desc }) {
+function InternshipCard({ company, date, desc, href, linkText, featured = false }) {
   return (
-    <Card className="hover:border-primary/50 transition-colors">
-      <h3 className="font-bold">{company}</h3>
-      <p className="text-sm text-secondary mb-2 font-mono">{date}</p>
+    <Card className={`h-full transition-colors ${featured ? "border-primary/35 bg-[var(--accent-bg)]" : "hover:border-primary/50"}`}>
+      <div className="flex flex-wrap items-center justify-between gap-2">
+        <h3 className="font-bold">{company}</h3>
+        {href && <Link href={href} text={linkText} />}
+      </div>
+      <p className="text-sm text-secondary mb-2 tabular-nums">{date}</p>
       <p className="text-sm text-secondary">{desc}</p>
     </Card>
   );

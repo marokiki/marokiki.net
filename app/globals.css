@@ -3,28 +3,107 @@
 @tailwind utilities;
 
 :root {
-  --background: #f8fafc;
-  --foreground: #1e293b;
-  --card-bg: #ffffff;
-  --card-border: #e2e8f0;
-  --primary: #3b82f6;
-  --secondary: #64748b;
+  color-scheme: light;
+  --background: #f6f5f1;
+  --foreground: #2c302b;
+  --card-bg: #fdfcf9;
+  --card-border: #dedfd5;
+  --primary: #49634e;
+  --primary-rgb: 73 99 78;
+  --primary-strong: #354e3b;
+  --secondary: #64695f;
+  --accent-bg: #edf0e7;
+  --control-bg: #f6f5f1;
+  --on-primary: #ffffff;
 }
 
 [data-theme='dark'] {
-  --background: #0f172a;
-  --foreground: #f1f5f9;
-  --card-bg: #1e293b;
-  --card-border: #334155;
-  --primary: #60a5fa;
-  --secondary: #94a3b8;
+  color-scheme: dark;
+  --background: #1b1e1b;
+  --foreground: #eeeee5;
+  --card-bg: #232723;
+  --card-border: #3e453d;
+  --primary: #afc3a1;
+  --primary-rgb: 175 195 161;
+  --primary-strong: #c4d3b9;
+  --secondary: #b0b5a9;
+  --accent-bg: #2c352b;
+  --control-bg: #1b1e1b;
+  --on-primary: #1b1e1b;
 }
 
 body {
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+  font-family: var(--font-line-seed-jp), "LINE Seed JP", sans-serif;
   color: var(--foreground);
   background: var(--background);
+  line-height: 1.8;
   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.profile-header {
+  margin: 2.5rem 0 3.5rem;
+  text-align: center;
+}
+
+.profile-name {
+  margin-bottom: 0.75rem;
+  color: var(--foreground);
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1.15;
+  text-wrap: balance;
+}
+
+.profile-role {
+  color: var(--secondary);
+  font-size: clamp(0.95rem, 2.5vw, 1.125rem);
+  letter-spacing: 0.02em;
+}
+
+::selection {
+  color: var(--foreground);
+  background: var(--accent-bg);
+}
+
+a,
+button,
+summary {
+  outline-offset: 4px;
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 3px solid var(--primary);
+}
+
+.page-controls {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin-left: auto;
+  padding: 0.4rem;
+  background: var(--control-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 0 0 0 0.5rem;
+}
+
+.history-disclosure[open] .history-chevron {
+  transform: rotate(180deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 @layer utilities {

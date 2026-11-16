@@ -7,7 +7,7 @@ export default function Page() {
   return (
     <>
       <LanguageRedirect />
-      <div style={{ display: 'flex', alignItems: 'center' }}>
+      <div className="page-controls">
         <ThemeToggle />
         <LanguageToggle />
       </div>
