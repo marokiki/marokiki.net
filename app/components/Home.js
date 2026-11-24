@@ -133,21 +133,30 @@ export default function Home() {
           </Card>
 
           <Card>
-            <h3 className="font-bold text-lg mb-1">カンファレンス・学会</h3>
+            <h3 id="conferences" className="font-bold text-lg mb-1">カンファレンス・学会</h3>
             <div className="space-y-4 mt-5">
-              <EventItem date="2026/7" title="IETF 126" role="発表: Post-Quantum Signature Algorithm Profile and Migration Considerations for the Resource Public Key Infrastructure (RPKI)" featured>
+              <EventItem date="2026/11" title="IETF 127" role="SIDROPSで発表: Post-Quantum Cryptography for the RPKI">
+                <Link href="https://datatracker.ietf.org/meeting/127/materials/slides-127-sidrops-sessb-post-quantum-cryptography-for-the-rpki-01" text="発表資料" />
+                <Link href="https://datatracker.ietf.org/meeting/127/session/sidrops/" text="セッション" />
+                <Link href="https://datatracker.ietf.org/doc/draft-yoshikawa-sidrops-pqc-rpki/" text="Internet-Draft" />
+              </EventItem>
+              <EventItem date="2026/11" title="Peering Asia 8.0" role="Peering Coordination / JP Student Fellowship">
+                <Link href="https://8.peeringasia.org/" text="公式サイト" />
+                <Link href="https://8.peeringasia.org/fellows/" text="フェローシップ" />
+              </EventItem>
+              <EventItem date="2026/7" title="IETF 126" role="発表: Post-Quantum Signature Algorithm Profile and Migration Considerations for the Resource Public Key Infrastructure (RPKI)">
                 <Link href="https://datatracker.ietf.org/meeting/126/materials/slides-126-sidrops-post-quantum-signature-algorithm-profile-and-migration-considerations-for-the-resource-public-key-infrastructure-rpki-00" text="発表資料" />
                 <Link href="https://datatracker.ietf.org/meeting/126/session/sidrops/" text="セッション" />
                 <Link href="https://datatracker.ietf.org/meeting/126/materials/slides-126-sidrops-post-quantum-signature-algorithm-profile-and-migration-considerations-for-the-resource-public-key-infrastructure-rpki-00.pdf" text="PDF" />
               </EventItem>
-              <EventItem date="2026/7" title="JANOG58" role="プログラム委員 / 発表: 『坂の上の雲』へ続く道は、どこにあるのか" featured>
+              <EventItem date="2026/7" title="JANOG58" role="プログラム委員 / 発表: 『坂の上の雲』へ続く道は、どこにあるのか">
                 <Link href="https://www.janog.gr.jp/meeting/janog58/pr-sakanouenokumo/" text="発表概要" />
               </EventItem>
-              <EventItem date="2026/5" title="TWNOG 7.0" role="発表: Bridging Communities — HomeNOC's New PoP in Taiwan" featured>
+              <EventItem date="2026/5" title="TWNOG 7.0" role="発表: Bridging Communities — HomeNOC's New PoP in Taiwan">
                 <Link href="https://speakerdeck.com/as59105/bridging-communities-homenocs-new-pop-in-taiwan" text="スライド" />
                 <Link href="https://2026.twnog.net/agenda/c8d38c" text="発表概要" />
               </EventItem>
-              <EventItem date="2026/4" title="RubyKaigi 2026 NOC" role="Member (Cabling)" featured />
+              <EventItem date="2026/4" title="RubyKaigi 2026 NOC" role="Member (Cabling)" />
               <EventItem date="2026/3" title="ICTSC2025" role="チーム「KOC」準優勝">
                 <Link href="https://icttoracon.net/archives/category/ictsc2025" text="HP" />
               </EventItem>
@@ -348,10 +357,10 @@ function HistoryDisclosure({ summary, children }) {
   );
 }
 
-function EventItem({ date, title, role, children, featured = false }) {
+function EventItem({ date, title, role, children }) {
   return (
-    <div className={`flex flex-col md:flex-row md:items-baseline gap-1 md:gap-4 border-l-2 pl-4 py-1 relative ${featured ? "border-primary" : "border-card-border"}`}>
-      <div className={`absolute -left-[5px] top-3 w-2 h-2 rounded-full ${featured ? "bg-primary ring-4 ring-[var(--accent-bg)]" : "bg-secondary"}`}></div>
+    <div className="flex flex-col md:flex-row md:items-baseline gap-1 md:gap-4 border-l-2 pl-4 py-1 relative border-card-border">
+      <div className="absolute -left-[5px] top-3 w-2 h-2 rounded-full bg-secondary"></div>
       <div className="flex-shrink-0 w-24 text-sm text-secondary tabular-nums">{date}</div>
       <div className="flex-1">
         <div className="font-medium text-foreground flex flex-wrap items-center gap-y-1">
